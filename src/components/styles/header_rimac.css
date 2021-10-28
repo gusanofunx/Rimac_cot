@@ -1,0 +1,67 @@
+
+
+.hh_eader{
+background-color: white;
+height: 64px;
+display:flex;
+padding: 24px;
+border-bottom: 1px solid #E4E8F7;
+justify-content: space-between;
+
+
+}
+.logo{
+margin-left: 120px;
+}
+
+.call_us{
+display:flex;
+padding-right: 120px;
+}
+
+
+.phone_h{
+font-size: 14px;
+margin-left: 20;
+color: #6F7DFF;
+font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+line-height: 24px;
+
+}
+
+
+.nphone_2{
+color:  #6769FF;
+display: none;
+
+}
+
+
+@media screen and (max-width: 800px) {
+.hh_eader{
+height:56px
+}
+.logo{
+height:20px;
+margin-left:10%!important;
+}
+
+.nphone , .dudas{
+
+display:none;
+}
+
+.nphone_2{
+color:  #6769FF;
+display: flex;
+
+}
+.phone_h{
+display: flex;
+margin-right: 32px;
+}
+.call_us{
+padding-right: 0px;
+}
+
+}

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 .App {
 	/* text-align: center; */
+font-family: 'Lato';
 }
 
 .App-logo {
@@ -74,14 +75,6 @@ height: 100vh;
 /* background-image: url("./img/fondo_chica.png"); */
 
 }
-
-
-
-
-
-
-
-
 
 
 .h1_sup{
@@ -200,6 +193,7 @@ font-size: 14px;
 font-family: Lato;
 font-size: 14px;
 padding-left:35px;
+text-transform: uppercase;
 padding-right: 35px;
 }
 
@@ -228,4 +222,132 @@ background-color: white;
 
 .pol_text{
     font-size: 12px;
+}
+
+.phone_responsive{
+display:none;
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .right_{
+width:100%;
+
+  }
+ .left_{
+width:100%;
+
+  }
+  .contain{
+display: block;
+
+  }
+
+.logoRimac {
+    margin-top: 20px;
+    margin-left: 32px; 
+}
+
+.container{
+/* margin-left: 10%; */
+padding: 10%;	
+
+}
+.formData_classN{
+width: 80%;
+margin-left:10%;
+margin-top: 5%;
+}
+
+.h1_sup{font-size:28px}
+.phone_responsive{
+display:block;
+position: absolute;
+top: 20px;
+right: 30px;
+}
+.nphone{
+color:  #6769FF;
+
+}
+
+.blok_right {
+    margin-top: 30px;
+    margin-left: 32px;
+	margin-right: 40%;
+}
+.chica {
+    margin-left: 55%;
+    height: 30%;
+    width: 300;
+    display: flex;
+    margin-top: 10%;
+position: absolute;
+    z-index: 10;
+}
+.tell_us{font-size:14px}
+
+.right_ {
+    position: relative;
+
+    background: white;
+    height: 100vh;
+    margin-top: -80%;
+}
+
+
+.logo{margin-left: 10% !important;}
+.hh_eader {
+
+
+}
+
+
+
+.span_h1_sup{ font-size: 28px;}
+.but_rimac{width:100%}
+.phone,.copyright, .dudas{ display: none; }
+
+
+
+
+}
+
+
+
+
+/* COMUNITY STYLES ++++++++++++++++++++++++++++++ */
+.col-red{
+color:#EF3340;
+}
+.title{
+font-size:36px;
+
+}
+.left_2 {
+width: 30%;
+background: #F7F8FC ;  
+/* height: 100%; */
+position:absolute;
+left:0;
+top:64px;
+bottom:0;
+display: flex;
+}
+.right_2{
+position: absolute;
+width: 70%;
+right: 0;
+}
+
+.txt_reg{
+
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 28px;
+}
+.txt_reg_bold{
+
+font-weight: 500;
 }

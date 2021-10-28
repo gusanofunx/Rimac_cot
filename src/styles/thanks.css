@@ -1,0 +1,56 @@
+
+
+.stuff{
+height:353px;
+width:320px;
+margin-right:0px;
+margin-top:150px;
+position: relative;
+display: inline-block;
+
+float: right;
+margin-left: auto;
+
+
+/* align-self: flex-end; */
+}
+.men{
+
+float: right;
+margin-left: 22%;
+height:70%;
+margin-top:14%;
+}
+.cont_r{  
+margin-left: 25%;
+margin-right: 25%;
+
+margin-top:12%;
+}
+
+.head_img{
+width: 100%;
+height: 200px;
+background-image: url("../img/men3.png");
+display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+.left_2{
+display: none;
+
+}
+.right_2{
+width: 100%;
+position:relative;
+}
+.cont_r{
+
+margin-left:10%;
+margin-right:10%;
+}
+
+.head_img{ display: block;}
+
+}
