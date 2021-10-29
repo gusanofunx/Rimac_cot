@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300;400&display=swap');
 .App {
 	/* text-align: center; */
 font-family: 'Lato';
+margin:0;padding:0;height:100%;
 }
 
 .App-logo {
@@ -301,6 +302,7 @@ position: absolute;
 
 
 }
+.head_img{display: none !important;}
 
 
 
@@ -308,7 +310,12 @@ position: absolute;
 .but_rimac{width:100%}
 .phone,.copyright, .dudas{ display: none; }
 
-
+.right_2{
+width:100% !important;
+}
+.conaine{
+display:unset !important;
+}
 
 
 }
@@ -317,6 +324,9 @@ position: absolute;
 
 
 /* COMUNITY STYLES ++++++++++++++++++++++++++++++ */
+.pad10{
+padding: 10px;
+}
 .col-red{
 color:#EF3340;
 }
@@ -327,15 +337,20 @@ font-size:36px;
 .left_2 {
 width: 30%;
 background: #F7F8FC ;  
+
+
 /* height: 100%; */
 position:absolute;
+position:relative;
+
 left:0;
-top:64px;
+
 bottom:0;
-display: flex;
+
+height:100hv;
 }
 .right_2{
-position: absolute;
+position: relative;
 width: 70%;
 right: 0;
 }
@@ -351,3 +366,10 @@ line-height: 28px;
 
 font-weight: 500;
 }
+.red{
+
+background:#EF3340;
+}
+.w100{
+
+width: 100%;}

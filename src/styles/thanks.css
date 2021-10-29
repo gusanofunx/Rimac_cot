@@ -16,9 +16,9 @@ margin-left: auto;
 }
 .men{
 
-float: right;
+/* float: right; */
 margin-left: 22%;
-height:70%;
+height:50%;
 margin-top:14%;
 }
 .cont_r{  
@@ -41,16 +41,16 @@ display: none;
 display: none;
 
 }
-.right_2{
-width: 100%;
-position:relative;
-}
-.cont_r{
 
-margin-left:10%;
-margin-right:10%;
+.cont_r {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
 }
 
-.head_img{ display: block;}
+.head_img{ 
+display: block  !important;
+
+}
 
 }

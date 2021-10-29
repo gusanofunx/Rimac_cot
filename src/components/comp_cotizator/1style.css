@@ -1,0 +1,212 @@
+.indica{
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+text-align: center;
+letter-spacing: 0.2px;
+}
+.t_min{
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+letter-spacing: 0.6px;
+text-transform: uppercase;
+}
+.rrp{
+/* position: absolute; */
+/* width: 176px; */
+display:flex !important;
+align-items: center;
+width: 100%;
+
+}
+.sep_ver{
+width: 1px;
+height: 16px;
+left: 593px;
+top: 549px;
+
+/* Gray_5 */
+
+background: #E4E8F7;
+    margin-left: 12px;
+    margin-right: 12px;
+
+
+}
+.selec_{
+/* Gray_4 */
+
+border: 1px solid #C5CBE0;
+box-sizing: border-box;
+border-radius: 8px;
+padding: 16px;
+justify-content: space-between;
+display: flex;
+
+}
+.txt_selec_{
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+text-align: center;
+letter-spacing: 0.2px;
+
+/* Gray_1_Títulos */
+
+color: #494F66;
+
+}
+
+.txt_ts{
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 10px;
+line-height: 16px;
+/* or 160% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.8px;
+text-transform: uppercase;
+padding: 12px;
+/* Gray_1_Títulos */
+
+color: #494F66;
+}
+.sup_txt{
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+letter-spacing: 0.6px;
+text-transform: uppercase;
+margin-bottom: 10px;
+/* Gray_1_Títulos */
+
+color: #494F66;
+}
+.monto_num{
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: 36px;
+/* identical to box height, or 129% */
+
+letter-spacing: -0.2px;
+
+/* Gray_1_Títulos */
+
+color: #494F66;
+}
+
+.incluye{
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.2px;
+margin-bottom:12px;
+
+/* Gray_1_Títulos */
+
+color: #494F66;
+}
+.txt_incluye{
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+/* display: flex; */
+align-items: center;
+
+/* Gray_2_Paragraph */
+
+color: #676F8F;
+}
+.but_quiero{
+padding : 16px !important;
+background: #EF3340 !important;
+border-radius: 8px !important;
+border-color: #EF3340 !important;
+width: 100%;
+}
+.line_circle{
+border: 1px solid #C5CBE0;
+border-radius: 100px;
+width: auto;
+/* position: absolute; */
+margin-right: 16px;
+width: 30px;
+height: 30px;
+text-align: center;
+color: #C5CBE0;
+
+}
+.line_pun{
+
+border: 1px dashed #E4E8F7;
+box-sizing: border-box;
+transform: rotate(-90deg);
+display: inline;
+margin-left: 15px;
+}
+.tit_g{
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.2px;
+
+/* Gray_3 */
+
+color: #A3ABCC; 
+}
+.line_circle_blue{
+border: 1px solid #6F7DFF;
+border-radius: 100px;
+width: auto;
+/* position: absolute; */
+margin-right: 16px;
+width: 30px;
+height: 30px;
+text-align: center;
+color:#fff;
+background-color:  #6F7DFF;
+;
+
+}
+.ttg{
+
+color: #494F66;
+
+}
+

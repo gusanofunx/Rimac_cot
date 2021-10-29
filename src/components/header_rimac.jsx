@@ -2,11 +2,21 @@ import React from 'react'
 import "./styles/header_rimac.css"
 import RimacLogo from "../svg/logo2.svg"
 import phone from "../svg/phone.svg"
+import { useHistory } from "react-router-dom";
+
 
 export default function Header_rimac() {
+
+
+
+const history = useHistory();
+  function handleClick() {
+
+    history.push("/");
+  }
     return (
         <div className="hh_eader">
-                <img src={RimacLogo} className="logo" />
+                <img src={RimacLogo} className="logo"  onClick={handleClick} />
            		<div class="call_us">
 						<div className="dudas">
 							{" "}

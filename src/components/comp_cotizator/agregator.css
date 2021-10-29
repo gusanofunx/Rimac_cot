@@ -1,0 +1,52 @@
+.txt_midle{
+
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+
+/* Gray_1_Títulos */
+
+color: #494F66;
+/* margin-left: 20px; */
+
+}
+
+.line_circle_add{
+border: 1px solid #6F7DFF;
+border-radius: 100px;
+width: auto;
+/* position: absolute; */
+margin-right: 16px;
+width: 30px;
+height: 30px;
+text-align: center;
+color:#fff;
+/* background-color:  #6F7DFF; */
+;
+
+}
+
+.txt_blue{
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+letter-spacing: 0.6px;
+text-transform: uppercase;
+
+/* Acian_2_Hover */
+
+color: #6F7DFF;
+
+}
+.midle_paraph{
+/* margin-left: 20px; */
+margin-top: 20px;
+}

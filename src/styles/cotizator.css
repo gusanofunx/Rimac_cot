@@ -1,0 +1,165 @@
+.rl{
+/* background-color: orange; */
+padding: 10%;
+}
+.placa{
+
+border: 3px solid #F0F2FA;
+box-sizing: border-box;
+border-radius: 12px;
+height:172px;
+position: relative;
+
+}
+.placa_cont{
+padding:20px
+}
+.placa_det{
+width: 176px;
+height: 20px;
+left: 536px;
+top: 328px;
+text-transform: uppercase;
+/* Paragraph/Reg_12px */
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 20px;
+color: #A3ABCC;
+}
+
+.placa_name{
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 28px;
+/* or 140% */
+
+display: flex;
+align-items: center;
+
+/* Gray_1_Títulos */
+
+color: #494F66;
+}
+.men_like{
+position: absolute;
+bottom:0px;
+right: 0px;
+height: 180px;
+}
+
+.line_circle_red{
+border:  1px solid #FC606B;
+border-radius: 100px;
+width: auto;
+/* position: absolute; */
+margin-right: 16px;
+width: 30px;
+height: 30px;
+text-align: center;
+color:#fff;
+background-color:  #FFF;
+;
+
+}
+.gray_{
+border:  1px solid #F0F2FA;
+color:#F0F2FA;
+background-color:  #FFF;
+
+
+}
+
+.volver_resp{
+display: none;
+}
+.h_sup{
+padding: 5%;
+/* Title_09/Bol_10px_Upper */
+
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 10px;
+line-height: 16px;
+/* identical to box height, or 160% */
+
+letter-spacing: 0.8px;
+text-transform: uppercase;
+display:flex;
+justify-content:space-around;
+    align-items: center;
+
+}
+.bar_adv{
+width: 176px;
+height: 6px;
+left: 152px;
+top: 77px;
+
+/* Acian_2 */
+
+background: #6769FF;
+border-radius: 20px;
+}
+#rr_elem{ display: block;}
+#rr_resp{display: none;}
+
+.r_resp{   width:100% ;background:#fff ; position: fixed; bottom:0;
+-webkit-box-shadow: -2px -5px 39px -4px rgba(0,0,0,0.26); 
+box-shadow: -2px -5px 39px -4px rgba(0,0,0,0.26);
+padding:10px;
+
+ }
+.txt_but_rimac_resp{
+    font-family: Lato;
+    font-size: 10px;
+    padding-left: 35px;
+    text-transform: uppercase;
+    padding-right: 35px;
+
+}
+.but_red_resp{
+padding: 10px !important;
+    background: #EF3340 !important;
+    border-radius: 8px !important;
+    border-color: #EF3340 !important;
+    width: 100%;
+}
+.mensu{
+
+
+/* Title_09/Bol_10px_Upper */
+
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 10px;
+line-height: 16px;  
+}
+
+.cash_resp{
+
+
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 32px;
+}
+
+/* //////////////////////   resp //////////////////////////  */
+@media screen and (max-width: 700px) {
+.placa_name{
+width: 60%;
+}
+.volver_{display: none !important;}
+.volver_resp{display: block; height:60px; width:100%; }
+#rr_elem{display: none;}
+#rr_resp{display: block;}
+
+}

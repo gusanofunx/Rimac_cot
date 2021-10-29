@@ -1,17 +1,58 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../App.css";
 import RimacLogo from "../svg/logo.svg";
 import phone from "../svg/phone.svg";
 import check from "../svg/check.svg";
 import Down_row from "../svg/Down_row.svg";
 import { useHistory } from "react-router-dom";
+import axios from "axios";
 function Home() {
+	const history = useHistory();
+	function handleClick() {
+		axios.get("https://jsonplaceholder.typicode.com/users/" + parseInt(dni.charAt(0))).then((res) => {
+			console.log("----data ---- ", res.data);
+			setdata_user(res.data);
+var mdata =res.data
+mdata['placa']=placa;
+// mdata['placa']= placa;
 
-const history = useHistory();
-  function handleClick() {
 
-    history.push("/thanks");
-  }
+
+			history.push({ pathname: "/cotizator", data: mdata });
+		});
+	}
+	function submit() {
+		// alert("hola")
+		var patt = new RegExp(/^\D*\d{8}$/);
+		var pattcel = new RegExp(/^\D*\d{9}$/);
+
+		var res = patt.test(dni);
+		var resCel = pattcel.test(celular);
+
+		if (!res) {
+			alert("Dni no validao , 8  digitos");
+			return;
+		}
+		if (!resCel) {
+			alert(" no validao , 9  digitos");
+			return;
+		}
+		if (placa.length <= 3) {
+			alert(" La placa debe tener mas de 3 caracteres");
+			return;
+		}
+
+		handleClick();
+	}
+
+	const [dni, setdni] = useState("");
+	const [celular, setcelular] = useState("");
+	const [placa, setplaca] = useState("");
+	const [data_user, setdata_user] = useState([]);
+	useEffect(() => {
+		console.log("---- ", dni);
+	}, [dni]);
+
 	return (
 		<div>
 			<div className="contain">
@@ -32,15 +73,14 @@ const history = useHistory();
 					<div class="phone_responsive">
 						<pan class="phone_v">
 							<img src="/static/media/phone.c43d97dd.svg" />
-						</pan>{" "}
-						<span class="nphone"> Llámanos </span>{" "}
+						</pan>
+						<span class="nphone"> Llámanos </span>
 					</div>
 				</div>
 
 				<div className="right_">
 					<div class="top_data">
 						<div className="dudas">
-							{" "}
 							<span className="dud_txt">¿Tienes alguna duda? </span>
 						</div>
 
@@ -57,31 +97,29 @@ const history = useHistory();
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									<span class="input-group-text" id="basic-addon1">
-										DNI{" "}
+										DNI
 										<span>
 											<img src={Down_row} style={{ marginLeft: 12 }} />
 										</span>
 									</span>
 								</div>
-								<input type="text" class="form-control  fc_joss" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+								<input type="text" class="form-control  fc_joss" placeholder="Nro. de doc" aria-label="Username" aria-describedby="basic-addon1" onChange={(val) => setdni(val.target.value)} />
 							</div>
 							<div class="input-group mb-3">
-								<input type="text" class="form-control fc_joss" placeholder="Celular" aria-label="Username" aria-describedby="basic-addon1" />
+								<input type="text" class="form-control fc_joss" placeholder="Celular" aria-label="Username" aria-describedby="basic-addon1" onChange={(val) => setcelular(val.target.value)} v />
 							</div>
 							<div class="input-group mb-3">
-								<input type="text" class="form-control fc_joss" placeholder="Placa" aria-label="Username" aria-describedby="basic-addon1" />
+								<input type="text" class="form-control fc_joss" placeholder="Placa" aria-label="Username" aria-describedby="basic-addon1" onChange={(val) => setplaca(val.target.value)} />
 							</div>
 							<div className="row_">
 								<div className="green_box">
-									{" "}
-									<image src={check} />{" "}
+									<image src={check} />
 								</div>
 								<div className="pol_text" style={{ paddingBottom: 40 }}>
-									{" "}
 									Acepto la Política de Protecciòn de Datos Personales y los Términos y Condiciones.
 								</div>
 							</div>
-							<button type="button" class="btn btn-primary but_rimac" onClick={handleClick}>
+							<button type="button" class="btn btn-primary but_rimac" onClick={() => submit()}>
 								<span className="txt_but_rimac">COTÍZALO</span>
 							</button>
 						</div>
