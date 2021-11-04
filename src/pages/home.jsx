@@ -12,12 +12,9 @@ function Home() {
 		axios.get("https://jsonplaceholder.typicode.com/users/" + parseInt(dni.charAt(0))).then((res) => {
 			console.log("----data ---- ", res.data);
 			setdata_user(res.data);
-var mdata =res.data
-mdata['placa']=placa;
-// mdata['placa']= placa;
-
-
-
+			var mdata = res.data;
+			mdata["placa"] = placa;
+			// mdata['placa']= placa;
 			history.push({ pathname: "/cotizator", data: mdata });
 		});
 	}
